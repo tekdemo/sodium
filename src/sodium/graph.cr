@@ -167,8 +167,8 @@ module Sodium
     end
 
     # Return neighbours of node
-    def neighbours(node)
-      @adj.fetch(node, {} of Symbol => Int32).keys()
+    def neighbours(node : T)
+      @adj.fetch(node, {} of T => T).keys()
     end
 
     # Get node from graph
